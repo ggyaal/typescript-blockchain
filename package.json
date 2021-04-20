@@ -1,0 +1,13 @@
+{
+  "name": "typescript-blockchain",
+  "version": "1.0.0",
+  "description": "Learning Typescript by Making a Blockchain with it.",
+  "main": "index.js",
+  "repository": "https://github.com/ggyaal/typescript-blockchain.git",
+  "author": "ggyaal <72740806+ggyaal@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
