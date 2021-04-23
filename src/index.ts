@@ -1,11 +1,34 @@
-const name = "john",
-  age = 24,
-  sayHello = "hello";
+class Block {
+  public index: number;
+  public hash: string;
+  public previousHash: string;
+  public data: string;
+  public timestemp: number;
+  constructor(
+    index: number,
+    hash: string,
+    previousHash: string,
+    data: string,
+    timestemp: number
+  ) {
+    this.index = index;
+    this.hash = hash;
+    this.previousHash = previousHash;
+    this.data = data;
+    this.timestemp = timestemp;
+  }
+}
 
-const say = (name: string, age: number, sayHello: string): void => {
-  console.log(`${name}(${age}): ${sayHello}`);
-};
+const firstBlock = new Block(
+  0,
+  "020202022012",
+  "",
+  "This is first Block.",
+  1226
+);
 
-say(name, age, sayHello);
+let blockChain: [Block] = [firstBlock];
+
+console.log(blockChain);
 
 export {};
